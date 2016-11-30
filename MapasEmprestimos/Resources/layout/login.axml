@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#2579BF"
+    android:background="@color/CorPrincipal"
     android:orientation="vertical">
     <LinearLayout
         android:layout_width="fill_parent"
@@ -10,18 +10,34 @@
         android:layout_centerInParent="true"
         android:layout_margin="10dp"
         android:orientation="vertical">
-        <ImageView
-            android:layout_width="wrap_content"
+        <TextView
+            android:text="Controle de Empréstimos"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/txtTitulo"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textDirection="ltr"
+            android:textSize="@dimen/abc_action_bar_content_inset_material"
+            android:textStyle="bold"
+            android:verticalScrollbarPosition="left"
+            android:layout_gravity="top"
+            android:gravity="center" />
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_gravity="center"
             android:layout_marginBottom="20dp"
-            android:src="@drawable/map" />
+            android:src="@drawable/map"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
         <EditText
             android:id="@+id/userName"
             android:layout_width="fill_parent"
             android:layout_height="45dp"
             android:padding="5dp"
-            android:background="@android:color/white" />
+            android:background="@android:color/white"
+            android:hint="Login..." />
         <View
             android:layout_width="fill_parent"
             android:layout_height="2dp"
@@ -32,7 +48,8 @@
             android:layout_height="45dp"
             android:padding="5dp"
             android:background="@android:color/white"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:hint="Senha..." />
         <Button
             android:id="@+id/login"
             android:background="@drawable/borda_arredondada"
@@ -41,6 +58,7 @@
             android:layout_below="@id/password"
             android:layout_marginTop="10dp"
             android:text="Login"
-            android:textColor="@android:color/white" />
+            android:textColor="@color/CorPrincipal"
+            android:textStyle="bold" />
     </LinearLayout>
 </RelativeLayout>
