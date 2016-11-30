@@ -13,7 +13,7 @@ using Android.Support.Design.Widget;
 
 namespace MapasEmprestimos.Activities
 {
-    [Activity(Label = "Home", MainLauncher = true, LaunchMode = LaunchMode.SingleTop, Icon = "@drawable/Icon")]
+    [Activity(Label = "Home", Icon = "@drawable/map")]
     public class MainActivity : BaseActivity
     {
 

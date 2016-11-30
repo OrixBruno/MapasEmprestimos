@@ -13,11 +13,11 @@
     <AndroidApplication>true</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
-    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <AndroidSupportedAbis>armeabi%3barmeabi-v7a%3bx86</AndroidSupportedAbis>
     <MandroidI18n />
-    <AndroidUseLatestPlatformSdk />
+    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -66,6 +66,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Activities\MainActivity.cs" />
+    <Compile Include="Activities\SplashActivity.cs" />
     <Compile Include="Fragments\Fragment1.cs" />
     <Compile Include="Fragments\Fragment2.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
@@ -84,6 +85,9 @@
     <AndroidResource Include="Resources\layout\main.axml" />
     <AndroidResource Include="Resources\layout\nav_header.axml">
       <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\login.axml">
+      <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
@@ -118,7 +122,16 @@
     <AndroidResource Include="Resources\drawable-mdpi\ic_menu.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\ic_menu.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\ic_menu.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\map.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\map.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\map.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\map.png" />
+    <AndroidResource Include="Resources\drawable\splash_screen.xml" />
+    <AndroidResource Include="Resources\drawable\map.png" />
+    <AndroidResource Include="Resources\drawable\borda_arredondada.xml" />
+    <AndroidResource Include="Resources\drawable-xhdpi\map.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
      Other similar extension points exist, see Microsoft.Common.targets.
@@ -127,5 +140,4 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-  <ItemGroup />
 </Project>
